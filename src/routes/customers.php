@@ -17,7 +17,7 @@ $app->add(function ($req, $res, $next) {
 });
 
 // Get All Customers
-$app->get('/api/customers', function(Request $request, Response $response){
+$app->get('/api/Usuarios', function(Request $request, Response $response){
     $sql = "SELECT * FROM Usuarios";
 
     try{
@@ -36,7 +36,7 @@ $app->get('/api/customers', function(Request $request, Response $response){
 });
 
 // Get Single Customer
-$app->get('/api/customer/{id}', function(Request $request, Response $response){
+$app->get('/api/Usuarios/{ID}', function(Request $request, Response $response){
     $id = $request->getAttribute('id');
 
     $sql = "SELECT * FROM Usuarios WHERE ID = $ID";
@@ -57,7 +57,7 @@ $app->get('/api/customer/{id}', function(Request $request, Response $response){
 });
 
 // Add Customer
-$app->post('/api/customer/add', function(Request $request, Response $response){
+$app->post('/api/Usuarios/Agregar', function(Request $request, Response $response){
     $Primer_Nombre = $request->getParam('Primer_Nombre');
     $Primer_Apellido = $request->getParam('Primer_Apellido');
     $Telefono = $request->getParam('Telefono');
@@ -95,7 +95,7 @@ $app->post('/api/customer/add', function(Request $request, Response $response){
 });
 
 // Update Customer
-$app->put('/api/customer/update/{id}', function(Request $request, Response $response){
+$app->put('/api/Usuarios/Actualizar/{ID}', function(Request $request, Response $response){
     $ID = $request->getAttribute('ID');
     $Primer_Nombre = $request->getParam('Primer_Nombre');
     $Primer_Apellido = $request->getParam('Primer_Apellido');
@@ -142,7 +142,7 @@ $app->put('/api/customer/update/{id}', function(Request $request, Response $resp
 });
 
 // Delete Customer
-$app->delete('/api/customer/delete/{id}', function(Request $request, Response $response){
+$app->delete('/api/Usuarios/Borrar/{ID}', function(Request $request, Response $response){
     $id = $request->getAttribute('id');
 
     $sql = "DELETE FROM Usuarios WHERE id = $ID";
