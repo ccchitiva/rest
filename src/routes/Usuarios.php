@@ -39,7 +39,7 @@ $app->get('/api/Usuarios', function(Request $request, Response $response){
 $app->get('/api/Usuarios/{ID}', function(Request $request, Response $response){
     $ID = $request->getAttribute('ID');
 
-    $sql = "SELECT * FROM Usuarios WHERE ID = '2'";
+    $sql = "SELECT * FROM Usuarios WHERE ID = $ID";
 
     try{
         // Get DB Object
@@ -48,7 +48,7 @@ $app->get('/api/Usuarios/{ID}', function(Request $request, Response $response){
         $db = $db->connect();
 
         $stmt = $db->query($sql);
-        $customer = $stmt->fetch(PDO::FETCH_OBJ);
+        $Usuarios = $stmt->fetch(PDO::FETCH_OBJ);
         $db = null;
         echo json_encode($Usuarios);
     } catch(PDOException $e){
