@@ -37,7 +37,7 @@ $app->get('/api/Usuarios', function(Request $request, Response $response){
 
 // Get Single Customer
 $app->get('/api/Usuarios/{ID}', function(Request $request, Response $response){
-    $id = $request->getAttribute('ID');
+    $ID = $request->getAttribute('ID');
 
     $sql = "SELECT * FROM Usuarios WHERE ID = $ID";
 
