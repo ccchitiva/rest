@@ -32,7 +32,7 @@ CREATE TABLE `Usuarios` (
   `Primer_Apellido` varchar(255) NOT NULL,
   `Telefono` varchar(255) NOT NULL,
   `Correo` varchar(255) NOT NULL,
-  `Dirección` varchar(255) NOT NULL,
+  `Direccion` varchar(255) NOT NULL,
   `Ciudad` varchar(255) NOT NULL,
   `Departamente` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -41,9 +41,10 @@ CREATE TABLE `Usuarios` (
 -- Dumping data for table `customers`
 --
 
-INSERT INTO `Usuarios` (`ID`, `Primer_Nombre`, `Primer_Apellido`, `Telefono`, `Correo`, `Dirección`, `Ciudad`, `Departamente`) VALUES
-(2, 'Cristian', 'Chitiva', '3154928925', 'ccchitiva@unipanamericana.edu.co', 'Calle 32', 'Bogotá', 'Cundinamarca'),
-(3, 'Camilo', 'Arevalo', '3015554898', 'mipana@unipanamericana.edu.co', 'Calle 35', 'Bogotá', 'Cundinamarca');
+
+INSERT INTO `Usuarios` (`ID`, `Primer_Nombre`, `Primer_Apellido`, `Telefono`, `Correo`, `Direccion`, `Ciudad`, `Departamente`) VALUES
+(2, 'Cristian', 'Chitiva', '3154928925', 'ccchitiva@unipanamericana.edu.co', 'Calle 32', 'Bogota', 'Cundinamarca'),
+(3, 'Camilo', 'Arevalo', '3015554898', 'mipana@unipanamericana.edu.co', 'Calle 35', 'Bogota', 'Cundinamarca');
 
 --
 -- Indexes for dumped tables
