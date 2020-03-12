@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `slimapp`
+-- Database: `CMd98KbePE`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `customers`
+-- Table structure for table `Usuarios`
 --
 
 CREATE TABLE `Usuarios` (
@@ -38,7 +38,7 @@ CREATE TABLE `Usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `customers`
+-- Dumping data for table `Usuarios`
 --
 
 
@@ -51,7 +51,7 @@ INSERT INTO `Usuarios` (`ID`, `Primer_Nombre`, `Primer_Apellido`, `Telefono`, `C
 --
 
 --
--- Indexes for table `customers`
+-- Indexes for table `Usuarios`
 --
 ALTER TABLE `Usuarios`
   ADD PRIMARY KEY (`ID`);
@@ -63,8 +63,8 @@ ALTER TABLE `Usuarios`
 --
 -- AUTO_INCREMENT for table `Usuarios`
 --
-ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE `Usuarios`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
