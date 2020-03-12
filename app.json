@@ -1,6 +1,6 @@
 {
   "name": "Rest deployed at Heroku: PHP",
   "description": "C'est le deployment du REST service!",
-  "repository": "https://github.com/maxpower12/rest",
+  "repository": "https://github.com/ccchitiva/rest",
   "addons": []
 }
