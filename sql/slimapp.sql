@@ -26,24 +26,24 @@ SET time_zone = "+00:00";
 -- Table structure for table `customers`
 --
 
-CREATE TABLE `customers` (
-  `id` int(11) NOT NULL,
-  `first_name` varchar(255) NOT NULL,
-  `last_name` varchar(255) NOT NULL,
-  `phone` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `city` varchar(255) NOT NULL,
-  `state` varchar(255) NOT NULL
+CREATE TABLE `Usuarios` (
+  `ID` int(11) NOT NULL,
+  `Primer_Nombre` varchar(255) NOT NULL,
+  `Primer_Apellido` varchar(255) NOT NULL,
+  `Telefono` varchar(255) NOT NULL,
+  `Correo` varchar(255) NOT NULL,
+  `Dirección` varchar(255) NOT NULL,
+  `Ciudad` varchar(255) NOT NULL,
+  `Departamente` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `customers`
 --
 
-INSERT INTO `customers` (`id`, `first_name`, `last_name`, `phone`, `email`, `address`, `city`, `state`) VALUES
-(2, 'Sam', 'Smith', '333-333-3333', 'ssmith@yahoo.com', '33 Birch Rd', 'Miami', 'FL'),
-(3, 'Brad', 'Traversy', '333-333-3333', 'brad@test.com', '333 South st', 'Portland', 'ME');
+INSERT INTO `Usuarios` (`ID`, `Primer_Nombre`, `Primer_Apellido`, `Telefono`, `Correo`, `Dirección`, `Ciudad`, `Departamente`) VALUES
+(2, 'Cristian', 'Chitiva', '3154928925', 'ccchitiva@unipanamericana.edu.co', 'Calle 32', 'Bogotá', 'Cundinamarca'),
+(3, 'Camilo', 'Arevalo', '3015554898', 'mipana@unipanamericana.edu.co', 'Calle 35', 'Bogotá', 'Cundinamarca');
 
 --
 -- Indexes for dumped tables
@@ -52,15 +52,15 @@ INSERT INTO `customers` (`id`, `first_name`, `last_name`, `phone`, `email`, `add
 --
 -- Indexes for table `customers`
 --
-ALTER TABLE `customers`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `Usuarios`
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `customers`
+-- AUTO_INCREMENT for table `Usuarios`
 --
 ALTER TABLE `customers`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
