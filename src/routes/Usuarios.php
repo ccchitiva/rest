@@ -37,7 +37,7 @@ $app->get('/api/Usuarios', function(Request $request, Response $response){
 
 // Get Single Customer
 $app->get('/api/Usuarios/{ID}', function(Request $request, Response $response){
-    $id = $request->getAttribute('id');
+    $id = $request->getAttribute('ID');
 
     $sql = "SELECT * FROM Usuarios WHERE ID = $ID";
 
@@ -50,7 +50,7 @@ $app->get('/api/Usuarios/{ID}', function(Request $request, Response $response){
         $stmt = $db->query($sql);
         $customer = $stmt->fetch(PDO::FETCH_OBJ);
         $db = null;
-        echo json_encode($customer);
+        echo json_encode($Usuarios);
     } catch(PDOException $e){
         echo '{"error": {"text": '.$e->getMessage().'}';
     }
